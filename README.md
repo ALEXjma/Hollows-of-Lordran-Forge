@@ -1,6 +1,6 @@
 # Hollows-of-Lordran-Forge
 
-A custom Dark Souls set for Magic: The Gathering. ***Now*** *(mostly)* ***digitally playable using Forge!***
+A custom Dark Souls set for Magic: The Gathering. ***Now*** *(somewhat)* ***digitally playable using Forge!***
 > Note: This repo was not made by the same people who created the Hollows of Lordran set over at [DarkSoulsMTG](https://darksoulsmtg.com), but aims to be a one to one implementation of the set in the Forge MTG rules engine.
 
 ## Downloading and using Forge

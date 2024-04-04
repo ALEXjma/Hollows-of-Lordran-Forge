@@ -1,0 +1,49 @@
+[metadata]
+Code=HLW
+Date=2024-03-23
+Name=Hollows of Lordran
+Code2=HLW
+MciCode=hlw
+Type=Core
+
+[cards]
+1 U Adorned Gargoyle
+2 C Arrest
+3 C Astora Elite
+4 U Astora Outcast
+5 C Balder Knight
+6 C Bell Gargoyles
+7 C Bonfire Keeper
+10 M Darkbreaker Angel
+11 U Darkmoon Avenger
+12 U Darkmoon Deterrence
+13 R Doomed Pilgrim
+14 U Dull Defender
+15 R Endless Encounters
+17 C Exiled Priestess
+18 U Expendable's Vigil
+19 C Fade to Ash
+20 C Gargoyle Helm
+21 R Gwyndolin's Bow
+22 U Gwynevere's Benediction
+23 R Gwyn's Last Hope
+24 R Havel, the Rock
+25 U Heavy Iron Armor
+26 C Hollowed Hero
+27 C Imprisoned Hollow
+28 R Legacy of Knights
+29 C Lifehunt Boon
+30 U Overcome the Odds
+1001 L Plains
+1002 L Island
+1003 L Swamp
+1004 L Mountain
+1005 L Forest
+
+[tokens]
+hollow_astora_outcast
+hollow_darkbreaker_angel
+hollow_darkmoon_avenger
+hollow_doomed_pilgrim
+w_1_1_zombie_soldier
+hollow_exiled_priestess

@@ -1,0 +1,9 @@
+Name:Exiled Priestess
+ManaCost:1 W
+Types:Creature Human Cleric
+PT:2/1
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigPutCounter1 | TriggerDescription$ When CARDNAME dies, put two +1/+1 counters on target creature you control.
+SVar:TrigPutCounter1:DB$ PutCounter | ValidTgts$ Creature | TgtPrompt$ Select target creature you control | CounterType$ P1P1 | CounterNum$ 1
+A:AB$ Token | Cost$ 1 W ExileFromHand<1/Card> | TokenAmount$ 1 | TokenScript$ hollow_exiled_priestess | TokenOwner$ You | SorcerySpeed $True
+DeckHas:Ability$Token
+Oracle:When Exiled Priestess dies, put a +1/+1 counter on up to one target creature.\nHollow (Discard a card, Pay this card’s mana cost and exile it from your graveyard: Create a token that’s a copy of it, except it’s a black Zombie Human Cleric. Hollow only as a sorcery.)

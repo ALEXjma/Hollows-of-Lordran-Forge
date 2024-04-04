@@ -1,0 +1,5 @@
+Name:Gwyn's Last Hope
+ManaCost:1 W W
+Types:Sorcery
+A:SP$ DestroyAll | Cost$ 1 W W Sac<1/Creature>| ValidCards$ Creature | SpellDescription$ Destroy all creatures.
+Oracle:As an additional cost to cast this spell, sacrifice a creature.\nDestroy all creatures.

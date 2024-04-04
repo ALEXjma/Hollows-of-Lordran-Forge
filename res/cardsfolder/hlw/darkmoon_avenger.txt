@@ -1,0 +1,11 @@
+Name:Darkmoon Avenger
+ManaCost:2 W
+Types:Creature Human Knight
+PT:3/3
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ DelTrig 
+SVar:DelTrig:DB$ DelayedTrigger | Mode$ Phase | Phase$ End of Turn | ValidPlayer$ Opponent | Execute$ TrigSac
+SVar:TrigSac:DB$ Sacrifice | ValidTgts$ Opponent | SacValid$ Creature.tapped | Amount$ 1 | SacMessage$ tapped creature
+A:AB$ Token | Cost$ 2 W ExileFromHand<1/Card> | TokenAmount$ 1 | TokenScript$ hollow_darkmoon_avenger | TokenOwner$ You | SorcerySpeed $True
+DeckHints:Mode$Tapped
+DeckHas:Ability$Token
+Oracle:When Darkmoon Avenger enters the battlefield, at the beginning of target opponent’s next end step, that player sacrifices a tapped creature.\nHollow (Discard a card, Pay this card’s mana cost and exile it from your graveyard: Create a token that’s a copy of it, except it’s a black Zombie Human Knight. Hollow only as a sorcery.)

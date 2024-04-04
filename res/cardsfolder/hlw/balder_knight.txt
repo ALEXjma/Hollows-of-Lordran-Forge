@@ -1,0 +1,11 @@
+Name:Balder Knight
+ManaCost:2 W
+Types:Creature Zombie Knight
+PT:2/2
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Zombie.Other+YouCtrl | TriggerZones$ Battlefield | Execute$ TrigPutCounter | TriggerDescription$ Whenever another Zombie enters the battlefield under your control, put a +1/+1 counter on CARDNAME.
+SVar:TrigPutCounter:DB$ PutCounter | CounterType$ P1P1 | CounterNum$ 1
+SVar:BuffedBy:Zombie
+DeckHints:Type$Zombie
+DeckHas:Ability$Counters
+Oracle:Whenever another Zombie enters the battlefield under your control, put a +1/+1 counter on Balder Knight.
+

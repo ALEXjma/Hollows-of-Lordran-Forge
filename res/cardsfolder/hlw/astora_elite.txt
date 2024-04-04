@@ -1,0 +1,6 @@
+Name:Astora Elite
+ManaCost:1 W
+Types:Creature Human Knight
+PT:2/1
+S:Mode$ Continuous | Affected$ Card.Self+attacking | AddKeyword$ First Strike | SpellDescription$ CARDNAME has first strike as long as it's attacking.
+Oracle:Astora Elite has first strike as long as it's attacking.

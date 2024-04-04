@@ -1,0 +1,9 @@
+Name:Endless Encounters
+ManaCost:2 W
+Types:Sorcery
+A:SP$ Token | Cost$ 2 W | TokenAmount$ 2 | TokenScript$ w_1_1_zombie_soldier | TokenOwner$ You
+T:Mode$ DamageDone | ValidSource$ Creature.Zombie+YouCtrl | CombatDamage$ True | ValidTgts$ Opponent | TriggerZones$ Graveyard | Execute$ TrigChange 
+SVar:TrigChange:AB$ ChangeZone | Cost$ no cost | Deciders$ You | Origin$ Graveyard | Destination$ Hand
+DeckHas:Ability$Token
+DeckHints:Type$Zombie
+Oracle:Create two 1/1 white Zombie Soldier creature tokens.\nWhenever a Zombie you control deals combat damage to an opponent, if Endless Encounters is in your graveyard, you may return it to your hand.

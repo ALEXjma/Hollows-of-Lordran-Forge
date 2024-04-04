@@ -1,0 +1,6 @@
+Name:Overcome the Odds
+ManaCost:3 W
+Types:Instant
+A:SP$ Destroy | Cost$ 3 W | ValidTgts$ Creature.powerGE4 | TgtPrompt$ Select target creature with power 4 or greater | SubAbility$ Pump | SpellDescription$ Destroy target creature with power 4 or greater.
+SVar:Pump:DB$ PutCounter | Cost$ no cost | ValidTgts$ Creature | TgtPrompt$ Select target creature | CounterType$ P1P1 | CounterNum$ 1 | TgtPrompt$Put a +1/+1 counter on up to one target creature you control. | SpellDescription$ Put a +1/+1 counter on up to one target creature you control.
+Oracle:Destroy target creature with power 4 or greater. Put a +1/+1 counter on up to one target creature you control.

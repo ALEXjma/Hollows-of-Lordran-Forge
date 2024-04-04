@@ -1,0 +1,8 @@
+Name:Heavy Iron Armor
+ManaCost:1 W
+Types:Artifact Equipment
+K:Equip:2
+R:Event$ DamageDone | ActiveZones$ Battlefield | ValidSource$ Card,Emblem | ValidTarget$ Creature.EquippedBy | ReplaceWith$ DmgHalf | Description$ If a source would deal damage to equipped creature, prevent half that damage, rounded up.
+SVar:DmgHalf:DB$ ReplaceEffect | VarName$ DamageAmount | VarValue$ X
+SVar:X:ReplaceCount$DamageAmount/HalfUp
+Oracle:If a source would deal damage to equipped creature, prevent half that damage, rounded up.\nEquip {2}

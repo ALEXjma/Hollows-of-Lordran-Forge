@@ -1,0 +1,10 @@
+Name:Expendable's Vigil
+ManaCost:1 W
+Types:Enchantment Aura
+K:Enchant creature
+A:SP$ Attach | Cost$ 1 W | ValidTgts$ Creature | AILogic$ Pump | SpellDescription$ Enchanted creature gets +2/+0 and has vigilance.
+S:Mode$ Continuous | Affected$ Creature.EnchantedBy | AddPower$ 2 | AddToughness$ 0 | AddKeyword$ Vigilance
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Zombie+YouCtrl | TriggerZones$ Graveyard | Execute$ TrigChange | TriggerDescription$ Whenever a Zombie enters the battlefield under your control, you may pay {W}. If you do, return CARDNAME from your graveyard to your hand.
+SVar:TrigChange:AB$ ChangeZone | Cost$ W | Origin$ Graveyard | Destination$ Hand
+DeckHints:Type$Zombie
+Oracle:Enchant creature\nEnchanted creature gets +2/+0 and has vigilance.\nWhenever a Zombie enters the battlefield under your control, you may pay {W}. If you do, return Expendable’s Vigil from your graveyard to your hand.

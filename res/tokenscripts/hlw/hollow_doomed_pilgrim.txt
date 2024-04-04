@@ -1,0 +1,10 @@
+Name:Doomed Pilgrim
+ManaCost:no cost
+Types:Token Creature Zombie Human Cleric
+Colors:black
+PT:2/2
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | CheckSVar$ Y | SVarCompare$ GTX
+SVar:TrigChange:DB$ ChangeZone | Origin$ Library | Destination$ Hand | ChangeType$ Land.Basic | ChangeNum$ 2 | ShuffleNonMandatory$ True
+SVar:X:Count$Valid Land.YouCtrl
+SVar:Y:PlayerCountOpponents$HighestValid Land.YouCtrl
+Oracle:When Doomed Pilgrim enters the battlefield, if an opponent controls more lands than you, you may search your library for up to two Plains cards, reveal them, put them into your hand, then shuffle your library.

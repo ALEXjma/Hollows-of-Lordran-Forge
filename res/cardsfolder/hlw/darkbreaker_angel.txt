@@ -1,0 +1,10 @@
+Name:Darkbreaker Angel
+ManaCost:3 W W
+Types:Creature Angel
+PT:5/4
+K:Flying
+K:Vigilance
+K:Lifelink
+A:AB$ Token | Cost$ 3 W W ExileFromHand<1/Card> | TokenAmount$ 1 | TokenScript$ hollow_darkbreaker_angel | TokenOwner$ You | SorcerySpeed $True
+DeckHas:Ability$Token
+Oracle:Flying, vigilance, lifelink\nHollow (Discard a card, Pay this card’s mana cost and exile it from your graveyard: Create a token that’s a copy of it, except it’s a black Zombie Angel. Hollow only as a sorcery.)

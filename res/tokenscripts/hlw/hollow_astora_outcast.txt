@@ -1,0 +1,8 @@
+Name:Astora Outcast
+ManaCost:no cost
+Types:Token Creature Zombie Human Knight
+Colors:black
+PT:4/4
+T:Mode$ Attacks | ValidCard$ Card.Self | Execute$ TrigTap | TriggerDescription$ Whenever CARDNAME attacks, tap target creature an opponent controls.
+SVar:TrigTap:DB$ Tap | ValidTgts$ Creature.OppCtrl | TgtPrompt$ Select target creature opponent controls
+Oracle:Whenever Astora Outcast attacks, tap target creature an opponent controls.

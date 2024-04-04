@@ -1,0 +1,5 @@
+Name:Zombie Soldier
+ManaCost:no cost
+Types:Token Creature Zombie Soldier
+Colors:white
+PT:1/1

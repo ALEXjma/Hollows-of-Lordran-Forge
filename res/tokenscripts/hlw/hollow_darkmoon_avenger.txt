@@ -1,0 +1,10 @@
+Name:Darkmoon Avenger
+ManaCost:no cost
+Types:Token Creature Zombie Human Knight
+Colors:black
+PT:3/3
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ DelTrig 
+SVar:DelTrig:DB$ DelayedTrigger | Mode$ Phase | Phase$ End of Turn | ValidPlayer$ Player | Execute$ TrigSac
+SVar:TrigSac:DB$ Sacrifice | ValidTgts$ Opponent | SacValid$ Creature+IsTapped | Amount$ 1 | SacMessage$ tapped creature
+DeckHints:Mode$Tapped
+Oracle:When Darkmoon Avenger enters the battlefield, at the beginning of target opponent’s next end step, that player sacrifices a tapped creature.

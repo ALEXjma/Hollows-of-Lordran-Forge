@@ -1,0 +1,9 @@
+Name:Adorned Gargoyle
+ManaCost:3 W
+Types:Artifact Creature Gargoyle
+PT:3/2
+K:Flying
+S:Mode$ ReduceCost | ValidTarget$ Card.Self | ValidSpell$ Activated.Equip | Activator$ You | Amount$ 2 | Description$ Equip abilities you activate that target CARDNAME cost {2} less to activate. | AbilityDescription$ Equip abilities you activate that target Adorned Gargoyle cost {2} less to activate.
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | TgtPrompt$ Choose target equipment card in your graveyard | Execute$ TrigChange | TriggerDescription$ When Adorned Gargoyle dies, return up to one target Equipment card from your graveyard to your hand.
+SVar:TrigChange:AB$ ChangeZone | Origin$ Graveyard | Destination$ Hand | ValidTgts$ Equipment | TargetsWithDefinedController$ TriggeredCardController | Cost$ 0
+Oracle:Flying\nEquip abilities you activate that target Adorned Gargoyle cost {2} less to activate.\nWhen Adorned Gargoyle dies, return up to one target Equipment card from your graveyard to your hand.

@@ -1,0 +1,11 @@
+Name:Doomed Pilgrim
+ManaCost:1 W
+Types:Creature Human Cleric
+PT:2/2
+T:Mode$ ChangesZone | Origin$ Any | Destination$ Battlefield | ValidCard$ Card.Self | Execute$ TrigChange | CheckSVar$ Y | SVarCompare$ GTX
+A:AB$ Token | Cost$ 1 W ExileFromHand<1/Card> | TokenAmount$ 1 | TokenScript$ hollow_doomed_pilgrim | TokenOwner$ You | SorcerySpeed $True
+SVar:TrigChange:DB$ ChangeZone | Origin$ Library | Destination$ Hand | ChangeType$ Land.Basic | ChangeNum$ 2 | ShuffleNonMandatory$ True
+SVar:X:Count$Valid Land.YouCtrl
+SVar:Y:PlayerCountOpponents$HighestValid Land.YouCtrl
+DeckHas:Ability$Token
+Oracle:When Doomed Pilgrim enters the battlefield, if an opponent controls more lands than you, you may search your library for up to two Plains cards, reveal them, put them into your hand, then shuffle your library.\nHollow (Discard a card, Pay this card’s mana cost and exile it from your graveyard: Create a token that’s a copy of it, except it’s a black Zombie Human Cleric. Hollow only as a sorcery.)

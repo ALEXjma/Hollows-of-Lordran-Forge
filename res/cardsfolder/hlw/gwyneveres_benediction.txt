@@ -1,0 +1,9 @@
+Name:Gwynevere's Benediction
+ManaCost:W
+Types:Enchantment Aura
+K:Enchant creature
+A:SP$ Attach | Cost$ W | ValidTgts$ Creature.YouCtrl | TgtPrompt$ Select creature you control | AILogic$ Pump
+S:Mode$ Continuous | Affected$ Creature.EnchantedBy | AddPower$ Y | AddToughness$ Y | AddSVar$ EnchantMe | SpellDescription$ Enchanted creature gets +1/+1 for each permanent you control that’s attached to it.
+SVar:Y:Count$Valid Permanent.AttachedTo+YouCtrl Creature.EnchantedBy
+SVar:EnchantMe:Multiple
+Oracle:Enchant creature\nEnchanted creature gets +1/+1 for each permanent you control that’s attached to it.

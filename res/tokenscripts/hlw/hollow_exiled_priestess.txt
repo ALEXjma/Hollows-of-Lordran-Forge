@@ -1,0 +1,6 @@
+Name:Exiled Priestess
+ManaCost:no cost
+Types:Token Creature Zombie Human Cleric
+PT:2/1
+T:Mode$ ChangesZone | Origin$ Battlefield | Destination$ Graveyard | ValidCard$ Card.Self | Execute$ TrigPutCounter1 | TriggerDescription$ When CARDNAME enters the battlefield, put two -1/-1 counters on target creature you control.
+SVar:TrigPutCounter1:DB$ PutCounter | ValidTgts$ Creature | TgtPrompt$ Select target creature you control | CounterType$ P1P1 | CounterNum$ 1

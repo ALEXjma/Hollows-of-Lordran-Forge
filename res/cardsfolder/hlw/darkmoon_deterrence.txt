@@ -1,0 +1,6 @@
+Name:Darkmoon Deterrence
+ManaCost:2 W
+Types:Instant
+A:SP$ Destroy | Cost$ 2 W | ValidTgts$ Creature.attacking,Creature.blocking | TgtPrompt$ Select target attacking or blocking creature | SubAbility$ DBScry | SpellDescription$ Destroy target attacking or blocking creature.
+SVar:DBScry:DB$ Scry | Defined$ You | ScryNum$ 1 | SpellDescription$ Scry 1.
+Oracle:Destroy target attacking or blocking creature. Scry 1.

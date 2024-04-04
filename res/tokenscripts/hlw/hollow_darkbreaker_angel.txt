@@ -1,0 +1,8 @@
+Name:Darkbreaker Angel
+ManaCost:no cost
+Types:Token Creature Zombie Angel
+Colors:black
+PT:5/4
+K:Flying
+K:Vigilance
+K:Lifelink

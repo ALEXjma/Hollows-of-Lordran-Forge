@@ -1,0 +1,9 @@
+Name:Havel, the Rock
+ManaCost:1 W W
+Types:Legendary Creature Demigod Knight
+PT:3/3
+S:Mode$ Continuous | Affected$ Card.Self | AddPower$ X | AddToughness$ X | SpellDescription$ Havel, the Rock gets +1/+1 for each nontoken Equipment you control.
+SVar:X:Count$Valid Equipment.nonToken+YouCtrl
+DeckHints:Type$Equipment
+S:Mode$ Continuous | Affected$ You | AddKeyword$ You may pay 0 rather than pay equip costs. | SpellDescription$ You may pay 0 rather than pay equip costs.
+Oracle:Havel, the Rock gets +1/+1 for each nontoken Equipment you control.\nYou may pay 0 rather than pay equip costs.

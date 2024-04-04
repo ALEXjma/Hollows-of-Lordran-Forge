@@ -1,0 +1,9 @@
+Name:Astora Outcast
+ManaCost:3 W W
+Types:Creature Human Knight
+PT:4/4
+T:Mode$ Attacks | ValidCard$ Card.Self | Execute$ TrigTap
+A:AB$ Token | Cost$ 3 W W ExileFromHand<1/Card> | TokenAmount$ 1 | TokenScript$ hollow_astora_outcast | TokenOwner$ You | SorcerySpeed $True
+SVar:TrigTap:DB$ Tap | ValidTgts$ Creature.OppCtrl | TgtPrompt$ Select target creature opponent controls
+DeckHas:Ability$Token
+Oracle:Whenever Astora Outcast attacks, tap target creature an opponent controls.\nHollow (Discard a card, Pay this card’s mana cost and exile it from your graveyard: Create a token that’s a copy of it, except it’s a black Zombie Human Knight. Hollow only as a sorcery.)

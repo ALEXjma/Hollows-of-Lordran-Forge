@@ -1,0 +1,9 @@
+Name:Legacy of Knights
+ManaCost:1 W
+Types:Sorcery
+A:SP$ ChangeZone | Cost$ 1 W | Origin$ Library | Destination$ Library | ChangeType$ EACH Knight & Equipment | RememberChanged$ True | Reveal$ True | Shuffle$ False | Execute$ DBChangeZone | StackDescription$ {p:You} serches their library for up to one Knight card and up to one Equipment card and reveal them. | SpellDescription$ Search your library for up to one Knight card and up to one Equipment card and reveal them. Shuffle your library, then put those cards on top of it in any order.
+SVar:DBChangeZone:DB$ ChangeZone | Origin$ Library | Destination$ Library | ChangeType$ Card.IsRemembered | Shuffle$ True | SubAbility$ DBCleanup | StackDescription$ {p:You} shuffles their library, then puts those cards on top of it in any order.
+SVar:DBCleanup:DB$ Cleanup | ClearRemembered$ True
+AI:RemoveDeck:Random
+DeckHints:Type$Knight|Equipment
+Oracle:Search your library for up to one Knight card and up to one Equipment card and reveal them. Shuffle your library, then put those cards on top of it in any order.

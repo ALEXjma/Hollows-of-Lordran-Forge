@@ -1,0 +1,5 @@
+Name:Imprisoned Hollow
+ManaCost:W
+Types:Creature Zombie Soldier
+PT:0/4
+Oracle:

@@ -1,0 +1,8 @@
+Name:Gwyndolin's Bow
+ManaCost:1 W
+Types:Legendary Artifact Equipment
+K:Equip:2
+S:Mode$ Continuous | Affected$ Creature.EquippedBy | AddPower$ 2 | AddKeyword$ First Strike | Description$ Equipped creature gets +2/+0 and has first strike.
+T:Mode$ Attacks | ValidCard$ Creature.EquippedBy | ValidTgts$ Creature.OppCtrl | Execute$ TrigPump | TriggerDescription$ Whenever equipped creature attacks, choose target creature an opponent controls. Until your next turn, that creature can’t attack or block and its activated abilities can’t be activated.
+SVar:TrigPump:DB$ Pump | ValidTgts$ Creature.OppCtrl | TgtPrompt$ Choose target creature an opponent controls | KW$ HIDDEN CARDNAME can't attack or block. & HIDDEN CARDNAME's activated abilities can't be activated. | IsCurse$ True | Duration$ UntilYourNextTurn
+Oracle:Equipped creature gets +2/+0 and has first strike.\nWhenever equipped creature attacks, choose target creature an opponent controls. Until your next turn, that creature can’t attack or block and its activated abilities can’t be activated.\nEquip {2}

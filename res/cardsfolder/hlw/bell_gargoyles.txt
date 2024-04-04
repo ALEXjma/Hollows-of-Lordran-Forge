@@ -1,0 +1,7 @@
+Name:Bell Gargoyles
+ManaCost:4 W
+Types:Artifact Creature Gargoyle
+PT:3/3
+K:Flying
+K:Vigilance
+Oracle:Flying, vigilance

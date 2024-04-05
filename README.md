@@ -16,7 +16,7 @@ A custom Dark Souls set for Magic: The Gathering. ***Now*** *(somewhat)* ***digi
 ## Adding the Hollows of Lordran custom card set to Forge
 
 1. Clone this repo or download it by either clicking on the green "Code" button and then "Download ZIP" or clicking [here](https://github.com/ALEXjma/Hollows-of-Lordran-Forge/archive/refs/heads/main.zip).
-2. ~~Run the provided `AddSet.cmd` helper script on Windows~~ *(not yet implemented)* or manually copy the following files/folders to their respective locations:
+2. Run the provided `AddSet.cmd` helper script on Windows or manually copy the following files/folders to their respective locations:
    - `Hollows-of-Lordran-Forge\editions\Hollows_of_Lordran.txt` -> `<Forge_userDir>\custom\editions\`
    - `Hollows-of-Lordran-Forge\pics\cards\*` -> `<Forge_cacheDir>\pics\cards\`
    - `Hollows-of-Lordran-Forge\pics\tokens\*` -> `<Forge_cacheDir>\pics\tokens\`
@@ -34,7 +34,7 @@ A custom Dark Souls set for Magic: The Gathering. ***Now*** *(somewhat)* ***digi
 
 ## Removing the Hollows of Lordran set
 
-1. ~~Run the provided `RemoveSet.cmd` helper script on Windows~~ *(not yet implemented)* or manually delete the following files/folders:
+1. Run the provided `RemoveSet.cmd` helper script on Windows or manually delete the following files/folders:
    - `<Forge_userDir>\custom\editions\Hollows_of_Lordran.txt`
    - `<Forge_cacheDir>\pics\cards\HLW`
    - `<Forge_cacheDir>\pics\cards\MHLW`
